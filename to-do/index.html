@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="mt-2">
+    <div class="container">
+        <div class="row  justify-content-md-center">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-header bg-warning">
+                        <!-- Title -->
+                        <div class="lead text-center">To-Do App</div>
+                    </div>
+
+                    <div class="card-body">
+                        <!-- Input field for adding new tasks -->
+                        <form>
+                            <div class="input-group">
+                                <input type="text" name="txtTaskName" id="txtTaskName" class="form-control">
+                                <input type="submit" class="btn btn-primary btn-sm" id="btnAddTask" value="Add">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header controls">
+                        <!-- Status options for filtering tasks -->
+                        <div class="filters">
+                            <span class="active" id="all">All</span>
+                            <span id="pending">Pending</span>
+                            <span id="completed">Completed</span>
+                        </div>
+                        <input type="button" value="Clear" id="btnClear" class="float-end btn btn-danger btn-sm">
+                    </div>
+                    <!-- Task list -->
+                    <ul id="task-list" class="list-group list-group-flush"></ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+   
+</body>
+
+</html>
